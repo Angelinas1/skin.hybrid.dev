@@ -178,8 +178,6 @@
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(504)</visible>
 			</control>
-			
-			
 			<control type="group">
 				<left>710</left>
 				<top>94</top>
@@ -194,9 +192,8 @@
 					<timeperimage>5000</timeperimage>
 					<randomize>true</randomize>
 					<imagepath diffuse="Fanart_Diffuse.png" background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
-					<visible>!IsEmpty(Control.GetLabel(5045)</visible>
+					<visible>!IsEmpty(Control.GetLabel(5045))</visible>
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
-					
 				</control>
 				<control type="image">
 					<left>0</left>

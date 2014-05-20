@@ -934,11 +934,10 @@
 		<left>26</left>
 		<top>6</top>
 		<width>149</width>
-		
 		<height>223</height>
 		<include>BackgroundFade</include>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>Window_OpenClose_Animation</include>
+		<fadetime>FanartCrossfadeTime</fadetime>
+		<include>Window_OpenClose_Animation</include>
 		<align>center</align>
 		<aspectratio scalediffuse="false">scale</aspectratio>
 	</include>
@@ -949,8 +948,8 @@
 			<width>184</width>
 			<height>240</height>
 			<include>BackgroundFade</include>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>Window_OpenClose_Animation</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
 			<texture background="true">ClearCase/ClearCase.png</texture>
 		</control>
 	</include>
@@ -959,19 +958,18 @@
 		<top>11</top>
 		<width>201</width>
 		<height>201</height>
-		
 		<aspectratio scalediffuse="false">scale</aspectratio>
 		<include>BackgroundFade</include>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>Window_OpenClose_Animation</include>
+		<fadetime>FanartCrossfadeTime</fadetime>
+		<include>Window_OpenClose_Animation</include>
 	</include>
 	<include name="CDBoxGlass">
 		<control type="image">
 			<width>250</width>
 			<height>228</height>
 			<include>BackgroundFade</include>
-				<fadetime>FanartCrossfadeTime</fadetime>
-				<include>Window_OpenClose_Animation</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
 			<bordertexture>CDCase/cdshadow.png</bordertexture>
 			<texture background="true">CDCase/cdglass.png</texture>
 		</control>

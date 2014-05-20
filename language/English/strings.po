@@ -86,7 +86,9 @@ msgctxt "#31018"
 msgid "Enable Home Page Widget Panel Transparency"
 msgstr ""
 
-#empty string with id 31019
+msgctxt "#31019"
+msgid "Enable Home Page Power Button"
+msgstr ""
 
 msgctxt "#31020"
 msgid "Enable Full MPAA Description for Movies"
