@@ -193,6 +193,7 @@
 					<randomize>true</randomize>
 					<imagepath diffuse="Fanart_Diffuse.png" background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
 					<visible>!IsEmpty(Control.GetLabel(5045))</visible>
+					<visible>!Skin.HasSetting(disable504fanart)</visible>
 					<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="image">
@@ -205,7 +206,7 @@
 					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="SmallFanartFallback.jpg">$INFO[ListItem.Art(fanart)]</texture>
 					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
-					<visible>Container.Content(TVShows) | IsEmpty(Control.GetLabel(5045))</visible>
+					<visible>Container.Content(TVShows) | Skin.HasSetting(disable504fanart) | IsEmpty(Control.GetLabel(5045))</visible>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">

@@ -406,21 +406,29 @@
 			<!--visible>Skin.HasSetting(hidenowplayingfanart) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)</visible-->
 			<visible>!IsEmpty(ListItem.Title) + !Player.HasVideo + !Skin.HasSetting(hidebackgroundfanart)</visible>
 		</control>
-		<control type="image">
+		<!--control type="image">
 			<left>0</left>
 			<top>600r</top>
 			<width>1280</width>
 			<height>600</height>
 			<include>TransparentEffect</include>
 			<texture>floor.png</texture>
-		</control>
-		<control type="image">
+		</control-->
+		<!--control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1280</width>
 			<height>250</height>
 			<include>TransparentEffect</include>
 			<texture flipy="true">floor.png</texture>
+		</control-->
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>650</width>
+			<height>780</height>
+			<texture>SideFade.png</texture>
+			<visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(503) | Control.IsVisible(504) | Control.IsVisible(506) | Control.IsVisible(512) | Control.IsVisible(515) | Control.IsVisible(513) | Control.IsVisible(550) | Control.IsVisible(728)</visible>
 		</control>
 		<control type="image">
 			<include>Window_OpenClose_Animation</include>
@@ -428,8 +436,8 @@
 			<include>VisibleFadeEffect</include>
 			<aspectratio>stretch</aspectratio>
 			<include>TransparentEffect</include>
-			<texture>black-back.png</texture>
-			<visible>!Control.IsVisible(508) + !Control.IsVisible(509)</visible>
+			<texture>black_content.png</texture>
+			<!--visible>!Control.IsVisible(508) + !Control.IsVisible(509)</visible-->
 		</control>
 	</include>
 	<include name="ArtistExtraFanArt">
@@ -452,4 +460,34 @@
 			<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 		</control>
 	</include>
+	<include name="LocalSeasonFanArt">
+		<control type="image" id="5046">
+			<include>InvisibleButton</include>
+			<texture background="true">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+			<visible>Container.Content(seasons)</visible>
+		</control>
+	</include>
+	<!--
+	<control type="image">
+						<posx>18</posx>
+						<posy>24</posy>
+						<width>169</width>
+						<height>102</height>
+						<aspectratio>stretch</aspectratio>
+										<fadetime>FanartCrossfadeTime</fadetime>
+						<texture fallback="SmallFanartFallback.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
+						<aspectratio>stretch</aspectratio>
+						<visible>!StringCompare(ListItem.Label,..) + Container.Content(seasons) + IsEmpty(Control.GetLabel(5046))</visible>
+					</control>
+					<control type="image">
+						<posx>18</posx>
+						<posy>24</posy>
+						<width>169</width>
+						<height>102</height>
+						<aspectratio>stretch</aspectratio>
+										<fadetime>FanartCrossfadeTime</fadetime>
+						<texture background="true" fallback="SmallFanartFallback.jpg" diffuse="episodematte.png">$INFO[ListItem.Path]$INFO[ListItem.Label,,/fanart.jpg]</texture>
+						<visible>!StringCompare(ListItem.Label,..) + Container.Content(seasons) + !IsEmpty(Control.GetLabel(5046))</visible>
+					</control>
+	-->
 </includes>

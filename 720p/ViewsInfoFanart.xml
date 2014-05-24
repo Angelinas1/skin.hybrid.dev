@@ -254,7 +254,7 @@
 					<width>250</width>
 					<height>316</height>
 					<aspectratio>stretch</aspectratio>
-					<texture fallback="ClearCase/dv.png">$INFO[ListItem.FileExtension,ClearCase/,.png]</texture>
+					<texture fallback="ClearCase/dv.png">$VAR[VideoListCase,ClearCase/,.png]</texture>
 					<visible>!IsEmpty(ListItem.FileExtension)</visible>
 				</control>
 			</control>
