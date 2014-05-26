@@ -462,7 +462,6 @@
 						<onclick condition="Skin.String(mpaacertificate,NL)">Skin.SetString(mpaacertificate,USA)</onclick>
 						<enable>!Skin.HasSetting(enablefullmpaa)</enable>
 					</control>
-					
 					<control type="radiobutton" id="129">
 						<width>750</width>
 						<height>40</height>
@@ -475,7 +474,6 @@
 						<onclick>Skin.ToggleSetting(hideyearintitle)</onclick>
 						<selected>!Skin.HasSetting(hideyearintitle)</selected>
 					</control>
-					
 					<control type="radiobutton" id="131">
 						<width>750</width>
 						<height>40</height>

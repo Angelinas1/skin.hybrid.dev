@@ -131,6 +131,12 @@
 				<onup>594</onup>
 				<ondown>803</ondown>
 			</control>
+			<control type="group">
+				<visible>Control.IsVisible(594)</visible>
+				<left>90</left>
+				<top>592</top>
+				<include>FullScreenMediaFlagging</include>
+			</control>
 		</control>
 	</include>
 </includes>

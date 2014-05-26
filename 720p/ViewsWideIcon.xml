@@ -5,7 +5,7 @@
 			<visible>Control.IsVisible(505)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="panel" id="505">
-				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Files)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Files)</visible>
 				<left>95</left>
 				<top>100</top>
 				<width>1080</width>

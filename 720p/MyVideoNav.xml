@@ -150,7 +150,7 @@
 					<textwidth>170</textwidth>
 					<onclick>Skin.ToggleSetting(disablewatchedcheck)</onclick>
 					<selected>Skin.HasSetting(disablewatchedcheck)</selected>
-					<visible>!system.setting(hidewatched)</visible>
+					<visible>!system.setting(hidewatched) + !Control.IsVisible(555) + !Control.IsVisible(594) + !Control.IsVisible(730)</visible>
 				</control>
 				<control type="radiobutton" id="206">
 					<include>ButtonCommonValues</include>
@@ -197,6 +197,24 @@
 					<onclick>Skin.ToggleSetting(hideepisodethumb)</onclick>
 					<selected>Skin.HasSetting(hideepisodethumb)</selected>
 					<visible>Container.Content(Episodes)</visible>
+				</control>
+				<control type="radiobutton" id="211">
+					<description>Hide Genre Icons</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31024]</label>
+					<onclick>Skin.ToggleSetting(hidegenreicons)</onclick>
+					<selected>Skin.HasSetting(hidegenreicons)</selected>
+					<visible>!Container.Content(Episodes) + !Container.Content(Seasons) + !Container.Content(TVShows) + [Control.IsVisible(501) | Control.IsVisible(504) | Control.IsVisible(515) | Control.IsVisible(555) | Control.IsVisible(594) | Control.IsVisible(730)]</visible>
+				</control>
+				<control type="radiobutton" id="212">
+					<description>TVShow Banners Banners</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31025</label>
+					<onclick>Skin.ToggleSetting(view515hidebanners)</onclick>
+					<selected>Skin.HasSetting(view515hidebanners)</selected>
+					<visible>Control.IsVisible(515) + Container.Content(TVShows)</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>

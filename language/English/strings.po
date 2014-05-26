@@ -114,7 +114,15 @@ msgctxt "#31023"
 msgid "Background Type"
 msgstr ""
 
-#empty strings from id 31024 to 31027
+msgctxt "#31024"
+msgid "Hide genre icons"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Hide tv banners"
+msgstr ""
+
+#empty strings from id 31025 to 31027
 
 msgctxt "#31028"
 msgid "Plot Unavailable"
